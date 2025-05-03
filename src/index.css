@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 868px;
+    margin: auto;
+     justify-content: space-between;
+}
+
+.header{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu a:hover{
+  color: #3a3a3a;
+}
+
+.nav-menu{
+    background-color: #f0f0f0;
+}
+
+.numberValue{
+    text-align: center;
+    font-weight: 700;
+    font-size: 288px;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.counter-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.button {
+    width: 56px;
+    height: 58px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0; 
+    margin: 0 90px;  
+    color: white;
+}
+
+.green-button {
+    background-color: #28a745;  
+}
+
+.red-button {
+    background-color: #dc3545;  
+}
+
+.reset-button {
+    background-color: #6c757d; 
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: 0.8;  
+}
+
+.footer{
+    color: #ccc;
+     padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 185px;
+    background: rgba(112, 255, 0, 0.09);
+ }
+
+ .footer-logo{
+    font-weight: 700;
+    font-size: 29px;
+    color: #9b9da0;
+ }
+
+  
+
+.footer-link{
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+ 
+.footer-copyright{
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+} 
