@@ -6,11 +6,14 @@ function Number (){
     const [counter, setCounter] = useState(0)
 
     const plus = () => {
-        setCounter(counter + 1);
+        setCounter(counter + 3);
       };
     
       const minus = () => {
-        setCounter(counter - 1);
+        setCounter(prevCounter => Math.max(0, 
+            prevCounter - 2
+        ))
+         
       };
     
       const reset = () => {
