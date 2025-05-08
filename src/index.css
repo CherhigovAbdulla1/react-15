@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* 
 .container{
     max-width: 868px;
     margin: auto;
@@ -120,4 +124,4 @@
     font-weight: 700;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
-} 
+}  */

@@ -10,3 +10,6 @@ function Text({name, age}){
   }
 
   export default Text
+
+
+  
