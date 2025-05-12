@@ -2,11 +2,11 @@ import Logo from "./Logo";
 import Menu from "./Menu";  
 
  
-function Header (){
+function Header ({dataMenu}){
     return(
-        <div className="header">
+        <div className="lg:container mx-auto flex justify-between">
          <Logo/>
-         <Menu/> 
+         <Menu dataMenu={dataMenu}/> 
         </div>
     )
 }
