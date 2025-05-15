@@ -1,41 +1,24 @@
-import { useDispatch, useSelector } from "react-redux";
- import Buttons from "./assets/images/buttons.svg";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import TitlePage from "./pages/TitlePage/TitlePage";
+import NotFound from "./pages/NotFound/NotFound";
+import Layout from "./components/Layout/Layout";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
-function App(){
-   const dispath = useDispatch()
-  const number = useSelector(state => state)
-
-
-  const plus = () =>{
-      dispath ({
-        type:'PLUS'
-      })
-  }
-
-  const minus = () =>{
-      dispath ({
-        type:'MINUS'
-      })
-  }
-
-  const reset = () =>{
-     dispath ({
-        type:'RESET'
-      })
-  }
-
-    return(
-     <div className="container mx-auto">
-        <p className="text-4xl font-bold">{number}</p>
-        <button onClick={plus} className="border-2 border-blue-400 py-1 px-4">+</button>
-        <button onClick={reset} className="border-2 border-blue-400 py-1 px-4"><img src={Buttons} alt="button"></img></button>
-        <button onClick={minus} className="border-2 border-blue-400 py-1 px-4">-</button>
-      </div>
-    )
-}
+ function App() {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout/>}> 
+            <Route path="/" element={<HomePage/>} index/>
+            <Route path="/title" element={<TitlePage/>}/>
+            <Route path="/about" element={<AboutPage/>}/>
+            <Route path="*" element={<NotFound/>}/>
+        </Route>
+      </Routes>
+    </div>
+     
+   );
+ }
  
-
-
-export default App; 
-
- 
+ export default App;

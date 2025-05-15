@@ -2,46 +2,97 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Input from './components/Input';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-
-//store
-//reducer
-//dispath
-
-
-const initialState = 0
-
-const reducer = (state = initialState, action) => {
-
-  if(action.type === 'PLUS'){
-    return state + 1
-  }
-
-   if(action.type === 'MINUS'){
-    return state - 1
-  }
-
-   if(action.type === 'RESET'){
-     return (0);
-  }
-
-
-  return state
-}
-
-const store = createStore(reducer)
-
-
+ 
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-   <App/>  
-  </Provider>
+  <BrowserRouter>
+     <App/>  
+   </BrowserRouter>
+   
+   
 );
  
  
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //store
+// //reducer
+// //dispath
+
+// const store = createStore(reducer)
+
+
+// const initialState = [
+//   {
+//     id: 'I',
+//     text: 'Js',
+//     completed: true
+//   },
+//    {
+//     id: '2',
+//     text: 'React',
+//     completed: false
+//   }
+// ]
+
+// const reducer = (state = initialState, action) => {
+
+ 
+//   switch(action.type){
+//     case 'DELETE ':
+//       return state.filter(item => item.id !== action.payload) 
+//     case 'ADD':
+//       return[...state, action.payload]
+
+    
+//     default:
+//        return state
+//   }
+
+  // if(action.type === 'PLUS'){
+  //   return state + 1
+  // }
+
+  //  if(action.type === 'MINUS'){
+  //   return state - 1
+  // }
+
+  //  if(action.type === 'RESET'){
+  //    return (0);
+  // }
+
+
+   
+// }

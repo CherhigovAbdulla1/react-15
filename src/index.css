@@ -125,3 +125,9 @@
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
 }  */
+
+
+.navvlink.active{
+    color: rgb(20, 184, 166);
+    text-decoration: underline;
+}
